@@ -1,0 +1,12 @@
+
+
+.left {
+	float:left;
+	font-family: Calibri;
+	margin-left: 10%;
+	margin-bottom: 30px;
+	width:60%;
+	overflow:hidden;
+	color: #DDDDDD;
+	text-align:left;
+}

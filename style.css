@@ -1,12 +1,21 @@
 
 
-.left {
+.main_class {
 	float:left;
 	font-family: Calibri;
 	margin-left: 10%;
 	margin-bottom: 30px;
 	width:60%;
 	overflow:hidden;
-	color: #DDDDDD;
+	color: #F4F4F4;
 	text-align:left;
+}
+
+
+a:link, a:visited, a:hover, a:active {
+	color: #F4F4F4;
+}
+
+h1 {
+	font-size: 1.8em;
 }

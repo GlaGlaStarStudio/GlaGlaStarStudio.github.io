@@ -1,5 +1,4 @@
 
-
 .main_class {
 	float:left;
 	font-family: Calibri;
@@ -11,7 +10,6 @@
 	text-align:left;
 }
 
-
 a:link, a:visited, a:hover, a:active {
 	color: #F4F4F4;
 }
@@ -19,3 +17,9 @@ a:link, a:visited, a:hover, a:active {
 h1 {
 	font-size: 1.8em;
 }
+
+.buttons_lang { 
+	display: inline-block; 
+	color: #F4F4F4;
+	height: auto; 
+} 

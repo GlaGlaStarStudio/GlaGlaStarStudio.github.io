@@ -2,41 +2,78 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>GlaGlaStarStudio</title>
+        <title>Gla Gla Star Studio</title>
         <link rel="icon" type="image/png" href="favicon.png" >
         <link rel="stylesheet" type="text/css" href="style.css">
+	
+		<script type="text/javascript" src="translations.js"></script>
+		
+		<script>
+			function setLanguage(lang) {
+
+				var translation
+
+				switch (lang) {
+					case 'en':
+						translation = translation_en
+						break;
+					case 'fr':
+						translation = translation_fr
+						break;
+					default:
+						translation = translation_en
+				}
+				
+				document.getElementById("title_about_flugubb").innerHTML = translation.title_about_flugubb;
+				document.getElementById("text_about_flugubb").innerHTML = translation.text_about_flugubb;
+				document.getElementById("title_privacy_rules").innerHTML = translation.title_privacy_rules;
+				document.getElementById("text_privacy_rules").innerHTML = translation.text_privacy_rules;
+				document.getElementById("download_the_game_on_google_play").innerHTML = translation.download_the_game_on_google_play;
+				document.getElementById("contact").innerHTML = translation.contact;
+
+			}
+</script>
+
     </head>
 
-    <body style="background-color:#282828;">
+    <body style="background-color:#282828;" onload="setLanguage('en')">
 	
-		<div class="main_class">
+		<div class="main_class" id="main_class">
 
-		    <img src="logo_glaglastarstudio.png" alt="GlaGlaStarStudio" height="60" width="60" style="margin-bottom: 80px;">
+		    <img src="logo_glaglastarstudio.png" alt="Gla Gla Star Studio" height="100" width="100" style="margin-top:30px;">
 
-		    <h1>A propos de Flugubb</h1>
-			<p style="margin-bottom: 80px;">
-				Flugubb est un jeu indépendant. 
+		    <h1 style="margin-top: 70px;" id="title_about_flugubb">About Flugubb</h1>
+			<p id="text_about_flugubb">
+				Flugubb is an independant game made by the newly created studio Gla Gla Star Studio. It is available on Android.
 			</p>
 			
 			
-			<h1>Règles de confidentialité</h1>
-			<p style="margin-bottom: 80px;">
-				Fluggub respecte votre vie privée et ne collecte aucune donnée. De plus, il ne demande aucun accès à votre téléphone.
+			<h1 style="margin-top: 70px;" id="title_privacy_rules">Privacy rules</h1>
+			<p id="text_privacy_rules">
+				Fluggub respects your private life and does not collect any personnal data. Moreover, it does not request any permission on your device.
 			</p>
 
-			<p>
-				<a href="https://play.google.com/store/apps/details?id=com.motsflechesfrancais&hl=en_US&gl=US" target="_blank" rel="external">
-					Download the game on Play Store
+			<p style="margin-top: 70px;">
+				<a href="https://play.google.com/store/apps/details?id=com.glaglastarstudio.flugubb" target="_blank" rel="external" id="download_the_game_on_google_play">
+					Download the game on Google play
 				</a>
 			</p>
 			
 			<p>
-				<a href="mailto:glaglastarstudio@gmail.com?Subject=Contact%20GlaGlaStarStudio">
+				<a href="mailto:glaglastarstudio@gmail.com?Subject=Contact%20Gla%20Gla%20Star%20Studio" id="contact">
 					Contact
 				</a>
 			</p>
 			
 		</div>
+		
+
+		<div class="buttons_lang"> 
+			<a href="#" onclick="setLanguage('en')">EN</a>
+			<p style="display:inline">|</p>
+			<a href="#" onclick="setLanguage('fr')">FR</a>
+		</div> 
+
 
     </body>
         

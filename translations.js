@@ -9,7 +9,7 @@ const translation_en = {
 
 const translation_fr = {
 	title_about_flogubb: "À propos de Flogubb",
-	text_about_flogubb: "Flogubb est un jeufkugubb original et indépendant créé par le jeune studio de création Gla Gla Star Studio, disponible dès maintenant sur Android.",
+	text_about_flogubb: "Flogubb est un jeu original et indépendant créé par le jeune studio de création Gla Gla Star Studio, disponible dès maintenant sur Android.",
 	title_privacy_rules: "Règles de confidentialité",
 	text_privacy_rules: "Floggub respecte votre vie privée et ne collecte aucune donnée personnelle. De plus, il ne demande aucune autorisation à votre appareil.",
 	download_the_game_on_google_play: "Télécharger le jeu sur Google Play",
